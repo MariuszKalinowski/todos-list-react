@@ -7,7 +7,7 @@ import Header from "./Header";
 
 const tasks = [
   { id: 1, content: "Przejść na react", done: false },
-  { id: 2, content: "Zjeść obiad", done: true },
+  { id: 2, content: "Zjeść kolację", done: true },
 ];
 
 const hideDoneTasks = false;
