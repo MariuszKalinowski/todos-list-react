@@ -1,0 +1,97 @@
+.form {
+    margin: 2px 20px 10px 20px;
+    max-width: 1200px;
+    }
+    @media(max-width: 992px) {
+        .form {
+            margin: 2px 20px 10px 20px;
+            max-width: 992px;
+        }
+    }
+    @media(max-width: 767px) {
+        .form {
+            margin: 2px 20px 10px 20px;
+            max-width: 767px;
+        }
+    }
+    
+    .form__element--first {
+        margin-top: 2px;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 180px;
+        gap: 20px; 
+    }
+    @media(max-width: 767px) {
+        .form__element--first {
+            margin-top: 2px;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px; 
+        }
+    }
+    
+    .form__newTask {
+        padding: 10px;
+        width: 100%;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc
+    }
+    
+    .form__submit {
+        
+        padding: 10px;
+        width: 100%;
+        font-size: medium;
+        color: white;
+        background-color: teal;
+        border: none;
+        transition: 1s;
+    }
+    .form__submit:hover {
+        background-color: hsl(180, 100%, 35%);
+        transform: scale(1.1);
+    }
+    @media(max-width: 767px) {
+        .form__submit:hover {
+            background-color: hsl(180, 100%, 35%);
+            transform: scale(1);
+        }
+    }
+    
+    .form__renderButton {
+    
+        background-color: white;
+        height: 35px;
+        padding: 5px;
+        font-size: 16px;
+        border: none;
+        color: teal;
+        font-size: 16px;
+        border: none;
+        transition: 0.5s;
+        margin-left: 20px;
+    }
+    @media(max-width: 767px) {
+        .form__renderButton {
+            flex-basis: 100%;
+        }
+    }
+    
+    .form__renderButton:hover {
+        color: hsl(180, 100%, 35%)
+    }
+    
+    .form__renderButton:disabled {
+        background-color: white;
+        color: hsl(0, 0%, 80%);
+    }
+    

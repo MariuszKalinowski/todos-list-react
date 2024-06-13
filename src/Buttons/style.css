@@ -1,0 +1,27 @@
+.form__renderButton {
+
+    background-color: white;
+    height: 35px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    color: teal;
+    font-size: 16px;
+    border: none;
+    transition: 0.5s;
+    margin-left: 20px;
+}
+@media(max-width: 767px) {
+    .form__renderButton {
+        flex-basis: 100%;
+    }
+}
+
+.form__renderButton:hover {
+    color: hsl(180, 100%, 35%)
+}
+
+.form__renderButton:disabled {
+    background-color: white;
+    color: hsl(0, 0%, 80%);
+}
