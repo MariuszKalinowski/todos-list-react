@@ -39,7 +39,10 @@ function App() {
   };
 
   const addNewTask = (newTaskContent) => {
-    if (newTaskContent !== "") {
+    if (newTaskContent === "") {
+      return;
+    }
+
     setTasks(tasks => [
       ...tasks,
       {
@@ -48,8 +51,6 @@ function App() {
         id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
       },
     ]);
-  }
-    return 
   };
 
   return (
